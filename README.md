@@ -9,6 +9,6 @@ Students are expected to:
 Student Info
 =========================
 
-* Student Name:Nguyễn Quốc Thông
-* Student ID:BI9-214
+* Student Name: Nguyễn Quốc Thông
+* Student ID: BI9-214
 
