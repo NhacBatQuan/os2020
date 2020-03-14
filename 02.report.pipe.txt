@@ -1,0 +1,24 @@
+Command:grep list
+Result:<blank>
+
+Command:wc /etc/passwd
+Result: 41   71 2426 /etc/passwd
+
+Command:free
+Result:	total       used        free      shared  buff/cache   	available
+Mem:	3046700     1403444    	117616    9868    1525640     	1441536
+Swap:	969960      780         969180
+
+Command:cat proc/cpuinfo
+_perfmon nopl xtopology tsc_reliable nonstop_tsc cpuid pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cpuid_fault pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust smep arat md_clear flush_l1d arch_capabilities
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 4589.59
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management:
+
+Command:find -name " *.jpg" |wc -l
+Result:
+0
+
