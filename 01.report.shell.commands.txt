@@ -1,0 +1,73 @@
+Command:echo hello world
+Result:
+hello world
+
+Command:passwd
+Result:
+Changing password for jeonsoyeon.
+(current) UNIX password: 
+passwd:Authentication token manipulation error
+passwd:password unchanged
+
+Command:date
+Result:
+Sat Mar 14 03:25:59 PDT 2020
+
+Command:hostname
+Result:
+ubuntu
+
+Command:arch
+Result:
+x86_64
+
+Command:uname -a
+Result:
+Linux ubuntu 5.0.0-37-generic #40~18.04.1-Ubuntu SMP Thu Nov 14 12:06:39 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+
+Command:dmesg
+Result:
+[  126.276841] audit: type=1400 audit(1584181110.247:89): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.gnome-system-monitor" pid=1972 comm="apparmor_parser"
+[  126.781187] audit: type=1400 audit(1584181110.751:90): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.gnome-system-monitor.gnome-system-monitor" pid=1973 comm="apparmor_parser"
+[  358.573391] Bluetooth: RFCOMM TTY layer initialized
+[  358.573409] Bluetooth: RFCOMM socket layer initialized
+[  358.573427] Bluetooth: RFCOMM ver 1.11
+[  364.814359] rfkill: input handler disabled
+
+Command:uptime
+Result:
+03:26:36 up 10 min,  1 user,  load average: 0.27, 0.75, 0.55
+
+Command:who am i
+Result:
+<blank>
+
+Command:whoami
+Result:
+jeonsoyeon
+
+Command:who
+Result:
+jeonsoyeon :0           2020-03-14 03:22 (:0)
+
+Command:id
+Result:
+uid=1000(jeonsoyeon) gid=1000(jeonsoyeon) groups=1000(jeonsoyeon),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),116(lpadmin),126(sambashare)
+
+Command:last
+Result:
+jeonsoye :0           :0               Sat Mar 14 03:22   still logged in
+
+wtmp begins Sat Mar 14 03:22:16 2020
+
+Command:finger
+Result:
+Command 'finger' not found, but can be installed with:
+
+sudo apt install finger
+
+Command:w
+Result:
+03:27:21 up 10 min,  1 user,  load average: 0.36, 0.71, 0.54
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+jeonsoye :0       :0               03:22   ?xdm?   1:29   0.02s /usr/lib/gdm3/g
