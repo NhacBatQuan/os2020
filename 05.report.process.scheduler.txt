@@ -1,0 +1,29 @@
+Command:cat /proc/sched_debug
+Result :
+ S          gmain  8597         3.362426         2   120         0.000000         0.188325         0.000000 0 0 /autogroup-138
+ S          gdbus  8598       205.285414       252   120         0.000000        20.333366         0.000000 0 0 /autogroup-138
+ S   dconf worker  8599         8.231977        20   120         0.000000         1.229778         0.000000 0 0 /autogroup-138
+ S          gmain  8600      9053.597025         4   120         0.000000         0.385587         0.000000 0 0 /autogroup-99
+ S          gdbus  8601      9360.393783       137   120         0.000000         8.287813         0.000000 0 0 /autogroup-99
+ I kworker/u256:1  8727    346627.174819        60   120         0.000000         0.934349         0.000000 0 0 /
+ S          gmain  8597         3.362426         2   120         0.000000         0.188325         0.000000 0 0 /autogroup-138
+ S          gdbus  8598       205.285414       252   120         0.000000        20.333366         0.000000 0 0 /autogroup-138
+ S   dconf worker  8599         8.231977        20   120         0.000000         1.229778         0.000000 0 0 /autogroup-138
+ S          gmain  8600      9053.597025         4   120         0.000000         0.385587         0.000000 0 0 /autogroup-99
+ S          gdbus  8601      9360.393783       137   120         0.000000         8.287813         0.000000 0 0 /autogroup-99
+ I kworker/u256:1  8727    346627.174819        60   120         0.000000         0.934349         0.000000 0 0 /
+
+Command:cat /proc/1/sched 
+Result:
+se.avg.last_update_time                      :        2488458408960
+se.avg.util_est.ewma                         :                   10
+se.avg.util_est.enqueued                     :                    0
+policy                                       :                    0
+prio                                         :                  120
+clock-delta                                  :                   29
+mm->numa_scan_seq                            :                    0
+numa_pages_migrated                          :                    0
+numa_preferred_nid                           :                   -1
+total_numa_faults                            :                    0
+current_node=0, numa_group_id=0
+numa_faults node=0 task_private=0 task_shared=0 group_private=0 group_shared=0
