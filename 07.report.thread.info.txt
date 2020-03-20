@@ -1,0 +1,6 @@
+Command:ps auwx | grep firefox
+	-> pid firefox:8739
+	. ps -o nlwp 8739
+Result:
+NLWP
+  53
