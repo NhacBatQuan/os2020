@@ -15,9 +15,7 @@ void *prime (void *args)
 				break;
 		}
 		if (count==2)
-
 		printf("%d\n",n);
-
 }
 }
 
