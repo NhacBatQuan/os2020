@@ -1,5 +1,8 @@
 #include<stdio.h>
 #include<pthread.h>
+#include <semaphore.h>
+
+sem_t mutex;
 
 void *prime (void *args)
  {
@@ -15,9 +18,9 @@ void *prime (void *args)
 				break;
 		}
 		if (count==2)
-
+		sem_wait(&mutex);
 		printf("%d\n",n);
-
+		sem_post(&mutex);
 }
 }
 
@@ -28,18 +31,22 @@ void *fibonacci(void*args) {
 		int next = num + previous;
 		previous = num;
 		num = next;
-	
+		
 		if(num >= 1000000)
+			sem_wait(&mutex);
 			break;
+		        sem_post(&mutex);
 	}
 }
 int main () {
 	pthread_t thread1;
 	pthread_t thread2;
+	sem_init(&mutex, 0, 1);
 	pthread_create(&thread1, NULL,prime, NULL);
 	pthread_create(&thread2, NULL,fibonacci, NULL);
 	pthread_join(thread1, NULL);
 	pthread_join(thread2, NULL);
+	sem_destroy(&mutex);
 	return 0;
 }
 
